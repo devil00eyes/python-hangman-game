@@ -1,5 +1,5 @@
 #add words here
-words = ('apple','banana','orange','grape','mango','peach','lemon','melon'
+words = ('apple','banana','orange','grape','mango','peach','lemon','melon',"mitochondria",
          ,'berry','cherry','carrot','potato','tomato','onion','garlic','celery'
          ,'pepper','radish','salmon','tuna','shark','whale','dolphin','octopus'
          ,'crab','lobster','eagle','falcon','parrot','penguin','chicken','turkey'
