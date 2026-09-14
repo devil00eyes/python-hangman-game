@@ -1,0 +1,78 @@
+import random
+import string
+from words import words
+non_used_letters=list(string.ascii_lowercase)
+answer=random.choice(words)
+figure={0:(" ",
+           " ",
+           " "),
+        1:("0",
+           " ",
+           " "),
+        2:("0",
+           "|",
+           " "),
+        3:(" 0",
+           "/|",
+           " "),
+        4:(" 0",
+           "/|\\",
+           " "),
+        5:(" 0",
+           "/|\\",
+           "/ "),
+        6:(" 0",
+           "/|\\",
+           "/ \\")}
+chances=0
+print("***********welcome to********")
+print("*****python hangman game*****")
+def draw(chances):
+    for line in (figure[chances]):
+        print(line)
+
+def hints(answer):
+    hint=[]
+    for i in range(len(answer)):
+        hint.append("_")
+    for i in hint:
+        print(i,end="")
+    return hint
+
+
+
+def main():
+    global chances
+    playing=True
+    hints(answer)
+    hint=hints(answer)
+    while playing:
+        draw(chances)
+        print("**********")
+        print("non used letters")
+        print(" ".join(non_used_letters))
+        chose=input("chose a letter:").lower()
+        non_used_letters.remove(chose)
+        if  chose.isdigit() or len(chose)>1:
+            print("invalid input")
+            continue
+        elif len(chose)<=0:
+            print("input cant be empty")
+            continue
+        if chose in answer:
+            for i in range(len(answer)):
+                if chose==answer[i]:
+                    hint[i]=chose
+        if not "_" in hint:
+            print("you win")
+            playing=False
+
+        else:
+            chances += 1
+        if chances == 7:
+            print(f"you lose")
+            print(f"the word is: {answer}")
+            playing=False
+        print(" ".join(hint))
+if __name__ == "__main__":
+    main()
