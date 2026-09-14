@@ -1,2 +1,24 @@
 #add words here
-words=("banana","criminal","apple","mitochondria","cell","orange")
+words = ('apple','banana','orange','grape','mango','peach','lemon','melon'
+         ,'berry','cherry','carrot','potato','tomato','onion','garlic','celery'
+         ,'pepper','radish','salmon','tuna','shark','whale','dolphin','octopus'
+         ,'crab','lobster','eagle','falcon','parrot','penguin','chicken','turkey'
+         ,'rabbit','donkey','giraffe','gorilla','monkey','panda','koala','tiger'
+         ,'leopard','cheetah','jaguar','koala','wombat','platypus','possum','bison'
+         ,'moose','walrus','penguin','squirrel','hamster','gerbil','guinea','ferret'
+         ,'weasel','badger','otter','beaver','hedgehog','porcupine','armadillo','sloth'
+         ,'lemur','baboon','chimpanzee','orangutan','gorilla','buffalo','antelope','gazelle'
+         ,'impala','jackal','hyena','meerkat','serval','ocelot','cougar','lynx','bobcat','coyote'
+         ,'prairie','wolverine','marmot','beaver','muskrat','opossum','raccoon','skunk','weasel',
+         'ferret','mink','stoat','ermine','weasel','otter','badger','wombat','bilby','numbat','quokka'
+         ,'kangaroo','wallaby','cassowary','emu','platypus','echidna','possum','glider','sugar','honey','syrup'
+         ,'caramel','chocolate','vanilla','cinnamon','nutmeg','ginger','turmeric','saffron','paprika','cayenne','mustard'
+         ,'vinegar','ketchup','mayonnaise','mustard','anchovy','caviar','sardine','mussel','oyster','clam','scallop','abalone',
+         'conch','nautilus','jellyfish','starfish','sea','urchin','coral','anemone','seaweed','kelp','algae','plankton','krill','shrimp'
+          ,'prawn','crayfish','crab','lobster','crawfish','langoustine','scampi','calamari','octopus','squid','cuttlefish','eel','sturgeon',
+         'pike','perch','bass','trout','salmon','mackerel','herring','sardine','anchovy','tuna','swordfish','marlin','tarpon','barracuda','grouper'
+         ,'snapper','flounder','halibut','cod','haddock','pollock','hake','whiting','ling','monkfish','anglerfish','lamprey','hagfish','ray','skate','shark'
+         ,'ray','whale','dolphin','porpoise','manatee','dugong','seal','sea','lion','walrus','narwhal','beluga','orca','sperm','beaked','spinner','bottlenose'
+         ,'river','bottlenose','dolphin','porpoise','orca','shark','ray','skate','stingray','manta','guitarfish','sawfish','bonnethead','hammerhead','bull','tiger'
+         ,'great','white','blue','mako','thresher','whale','shark','basking','frigate','porbeagle','shortfin','longfin','sand','dogfish','catshark','hagfish','lamprey',
+         'eel','moray','garden','yellow','garden','snake','viper','rattlesnake','cobra','mamba','boad','asp','adder','krait','taipan','death','adder','death','adder')   
