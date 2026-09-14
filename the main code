@@ -35,8 +35,6 @@ def hints(answer):
     hint=[]
     for i in range(len(answer)):
         hint.append("_")
-    for i in hint:
-        print(i,end="")
     return hint
 
 
@@ -52,7 +50,6 @@ def main():
         print("non used letters")
         print(" ".join(non_used_letters))
         chose=input("chose a letter:").lower()
-        non_used_letters.remove(chose)
         if  chose.isdigit() or len(chose)>1:
             print("invalid input")
             continue
@@ -66,13 +63,15 @@ def main():
         if not "_" in hint:
             print("you win")
             playing=False
-
+        elif not chose in non_used_letters:
+            print(f"{chose} have been used before")
         else:
             chances += 1
         if chances == 7:
             print(f"you lose")
             print(f"the word is: {answer}")
             playing=False
+        non_used_letters.remove(chose)
         print(" ".join(hint))
 if __name__ == "__main__":
     main()
