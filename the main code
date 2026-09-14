@@ -65,6 +65,7 @@ def main():
             playing=False
         elif not chose in non_used_letters:
             print(f"{chose} have been used before")
+            continue
         else:
             chances += 1
         if chances == 7:
